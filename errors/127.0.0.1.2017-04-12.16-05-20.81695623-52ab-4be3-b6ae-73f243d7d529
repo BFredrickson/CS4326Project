@@ -1,0 +1,21 @@
+(dp1
+S'output'
+p2
+S"<type 'exceptions.SyntaxError'> define_table argument is not a Field or Table: \n                Field('time_entered', 'datetime')\n                "
+p3
+sS'layer'
+p4
+S'C:\\Users\\bfred\\Documents\\web2py\\web2py\\applications\\AppointmentScheduler\\models\\medical_info.py'
+p5
+sS'code'
+p6
+S'# -*- coding: utf-8 -*-\n\ndb.define_table(\'form_info\', \n                Field(\'first_name\'),\n                Field(\'last_name\'),\n                Field(\'age\', \'integer\', requires=IS_NOT_EMPTY()),\n                Field(\'height\', \'integer\', requires=IS_NOT_EMPTY()),\n                Field(\'weight\', \'integer\', requires=IS_NOT_EMPTY()),\n                """\n                Field(\'time_entered\', \'datetime\')\n                """\n               )\n'
+p7
+sS'snapshot'
+p8
+(dp9
+sS'traceback'
+p10
+S'Traceback (most recent call last):\n  File "C:\\Users\\bfred\\Documents\\web2py\\web2py\\gluon\\restricted.py", line 227, in restricted\n    exec ccode in environment\n  File "C:\\Users\\bfred\\Documents\\web2py\\web2py\\applications\\AppointmentScheduler\\models\\medical_info.py", line 11, in <module>\n    """\n  File "C:\\Users\\bfred\\Documents\\web2py\\web2py\\gluon\\packages\\dal\\pydal\\base.py", line 834, in define_table\n    table = self.lazy_define_table(tablename,*fields,**args)\n  File "C:\\Users\\bfred\\Documents\\web2py\\web2py\\gluon\\packages\\dal\\pydal\\base.py", line 851, in lazy_define_table\n    table = table_class(self, tablename, *fields, **args)\n  File "C:\\Users\\bfred\\Documents\\web2py\\web2py\\gluon\\packages\\dal\\pydal\\objects.py", line 299, in __init__\n    field\nSyntaxError: define_table argument is not a Field or Table: \n                Field(\'time_entered\', \'datetime\')\n                \n'
+p11
+s.
